@@ -1,24 +1,28 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-::-webkit-scrollbar{
-    display: none;
-}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-html,body{
-width: 100%;
-height: 100%;
-overflow-x: hidden;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
-.main_loader{
+
+.main_loader {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
-.ldr_page{
+.ldr_page {
     background-color: #222321;
     width: 100%;
     height: 100%;
@@ -26,12 +30,13 @@ overflow-x: hidden;
     align-items: center;
     justify-content: center;
 }
-.ldr_page img{
+
+.ldr_page img {
     /* width: 1.5rem; */
     height: 2rem;
 }
-.ldr_overlay_page_1
-{
+
+.ldr_overlay_page_1 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,8 +46,8 @@ overflow-x: hidden;
     transition: all linear .2s;
 
 }
-.ldr_overlay_page_2
-{
+
+.ldr_overlay_page_2 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -51,4 +56,208 @@ overflow-x: hidden;
     background-color: #fff;
     transition: all linear .2s;
 
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dadada;
+    /* background-color: yellow; */
+}
+
+.navbar .logo {
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.navbar .left {
+    display: flex;
+    gap: 30px;
+
+}
+
+.navbar .right {
+    display: flex;
+    gap: 30px;
+
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+
+
+}
+
+.hero-left {
+    width: 70%;
+    padding: 15px;
+    padding: 5% 2%;
+    letter-spacing: 7px;
+}
+
+.hero h1 {
+    font-size: 170px;
+
+}
+
+.hero-right {
+    font-weight: 800;
+    width: 20%;
+    padding: 15px;
+    margin-top: 14%;
+    padding: 5% 2%;
+}
+
+span {
+
+    background-color: rgb(248, 248, 19);
+}
+
+.animate-text {
+    background-color: #000;
+    height: 60px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.animate-text .text {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    height: 60px;
+    color: white;
+    width: 100%;
+    animation: animated 9s linear infinite;
+    text-transform: capitalize;
+
+
+}
+
+
+
+@keyframes animated {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+}
+
+.section-2 {
+    width: 100%;
+
+}
+
+.section-2 img {
+    height: 250px;
+    width: 220px;
+}
+
+.second img {
+    height: 350px;
+    width: 300px;
+    padding: 15px;
+
+}
+
+.section-2-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.sapna {
+    font-style: oblique;
+}
+
+.first {
+    margin-top: 40px;
+    margin-left: 80%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.first:hover {
+
+    transform: rotate(-5deg);
+    /* transition: 0.5s ease-in-out; */
+}
+
+.overlay {
+    height: 250px;
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.365);
+    position: absolute;
+    top: 0%;
+}
+
+
+
+.section-3 {
+    width: 100%;
+    display: flex;
+
+}
+
+.section-3-left {
+    height: 100vh;
+    width: 50%;
+    background-color: #242523;
+    color: white;
+
+}
+
+.section-3-left .text {
+    width: 65%;
+    padding: 10% 10%;
+}
+
+.section-3-left .text h1 {
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+
+
+
+.text h2 {
+    font-size: 75px;
+    font-style: italic;
+    color: green;
+    border-bottom: 2px solid gray;
+    margin-top: 5%;
+    width: 5%;
+}
+
+.text p {
+    margin-left: 85%;
+    width: 75%;
+    margin-top: 25px;
+}
+
+.section-3-right {
+    height: 100vh;
+    width: 50%;
+    background-color: blue;
+}
+
+.section-3-right img {
+    height: 100vh;
+    width: 100%;
 }
